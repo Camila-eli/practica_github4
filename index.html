@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales Bonitos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a89cc, #4a69bd);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        nav {
+            background-color: #4a69bd;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+        
+        .intro {
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .animal-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+        
+        .animal-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .animal-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .animal-img {
+            height: 200px;
+            background-color: #6a89cc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .animal-info {
+            padding: 15px;
+        }
+        
+        .animal-info h3 {
+            color: #4a69bd;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #1e3799;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mundo Animal</h1>
+            <p>Descubre la belleza de la naturaleza</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Mamíferos</a></li>
+            <li><a href="#">Aves</a></li>
+            <li><a href="#">Reptiles</a></li>
+            <li><a href="#">Acuáticos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Bienvenido a nuestra página de animales</h2>
+            <p>Explora el fascinante mundo animal a través de nuestra colección de criaturas hermosas y descubre datos interesantes sobre cada una de ellas.</p>
+        </section>
+        
+        <section class="animal-gallery">
+            <div class="animal-card">
+                <div class="animal-img">Imagen de León</div>
+                <div class="animal-info">
+                    <h3>León</h3>
+                    <p>El rey de la selva, conocido por su melena característica y su potente rugido.</p>
+                </div>
+            </div>
+            
+            <div class="animal-card">
+                <div class="animal-img">Imagen de Delfín</div>
+                <div class="animal-info">
+                    <h3>Delfín</h3>
+                    <p>Inteligente y juguetón, este mamífero acuático es uno de los animales más carismáticos.</p>
+                </div>
+            </div>
+            
+            <div class="animal-card">
+                <div class="animal-img">Imagen de Colibrí</div>
+                <div class="animal-info">
+                    <h3>Colibrí</h3>
+                    <p>Estas pequeñas aves pueden volar en todas las direcciones, incluso hacia atrás.</p>
+                </div>
+            </div>
+            
+            <div class="animal-card">
+                <div class="animal-img">Imagen de Tortuga Marina</div>
+                <div class="animal-info">
+                    <h3>Tortuga Marina</h3>
+                    <p>Estas ancianas criaturas marinas pueden vivir más de 100 años.</p>
+                </div>
+            </div>
+            
+            <div class="animal-card">
+                <div class="animal-img">Imagen de Oso Panda</div>
+                <div class="animal-info">
+                    <h3>Oso Panda</h3>
+                    <p>Icono de la conservación, este oso se alimenta principalmente de bambú.</p>
+                </div>
+            </div>
+            
+            <div class="animal-card">
+                <div class="animal-img">Imagen de Mariposa</div>
+                <div class="animal-info">
+                    <h3>Mariposa Monarca</h3>
+                    <p>Conocida por su increíble migración de hasta 4000 kilómetros.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mundo Animal - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
